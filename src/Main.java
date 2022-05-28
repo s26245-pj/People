@@ -1,5 +1,6 @@
 import people.Lecturer;
 import people.Person;
+import people.Scholar;
 import people.Student;
 
 import javax.management.loading.MLetContent;
@@ -24,6 +25,17 @@ public class Main {
                                 "doctor");
 
         lecturer.printOutPerson();
+
+        System.out.println("\n\n\n");
+
+        Scholar scholar = new Scholar("Scholar", "scholarski",
+                                "15.12.2000",
+                                "female",
+                                "26285",
+                                600
+                                    );
+
+        scholar.printOutPerson();
     }
 
 }
